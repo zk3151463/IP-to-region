@@ -64,6 +64,29 @@ make build
 make build-linux
 ```
 
+### 运行打包后的文件
+
+构建完成后，可执行文件将位于 `bin` 目录下。运行方式如下：
+
+```bash
+# 使用默认配置运行（GeoIP 数据库，端口 8080）
+./bin/ip-location-service
+
+# 指定端口运行
+./bin/ip-location-service -port 8081
+
+# 使用 ip2region 数据库运行
+./bin/ip-location-service -db ip2region
+
+# 查看帮助信息
+./bin/ip-location-service -help
+```
+
+可用的命令行参数：
+- `-port`: 指定服务运行的端口号（默认：8080）
+- `-db`: 指定使用的数据库类型（可选值：geoip 或 ip2region，默认：geoip）
+- `-help`: 显示帮助信息
+
 ## 运行
 
 ```bash
