@@ -35,6 +35,15 @@ make download-geoip
 make download-geoip LICENSE_KEY=your_key
 ```
 
+> **注意**：使用 GeoIP 数据库需要 MaxMind 许可证密钥。您可以在以下地址申请免费的许可证密钥：
+> - https://www.maxmind.com/en/geolite2/signup
+> 
+> 申请步骤：
+> 1. 访问上述链接并注册账号
+> 2. 登录后进入 "Services" -> "My License Key"
+> 3. 点击 "Generate new license key" 生成新的许可证密钥
+> 4. 复制生成的密钥，用于下载数据库
+
 #### 下载 ip2region 数据库
 
 ```bash
